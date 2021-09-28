@@ -1,2 +1,0 @@
-# repositorioprueba
-una prueba
