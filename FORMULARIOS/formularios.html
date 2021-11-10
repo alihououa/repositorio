@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <html>
+<body>
+
+
+<h1>HTML Formulario</h1>
+
+<form action="https://www.google.es/" method="get" target="_blank" autocomplete="on" name="vuamosss">
+
+<table>
+    <tr>
+        <td><label for="nombre">Nombre</label></td>
+        <td><input type="text" name="nombre" id="nombre" value="" placeholder="Ponga aquí su nombre" onkeyup="alert('pon tu nombre')" readonly></td>
+    </tr>
+    
+    <tr>
+        <td><label for="apellidos">Apellidos</label></td>
+        <td><input type="text" name="apellidos" id="apellidos" value="" placeholder="Ponga aquí sus apellidos" autofocus onkeyup="" size="30" maxlength="10"></td>
+    </tr>   
+
+    <tr>
+        <td><label for="password">Password</label></td>
+        <td><input type="password" name="password" id="password" value="" placeholder="Ponga aquí su contraseña" autofocus onkeyup="" size="30" maxlength="10"></td>
+    </tr>   
+
+    <tr>
+        <td><input type="reset" value="Borrar"></td>
+        <td><input type="submit" value="Enviar Formulario"></td>
+        <td><input type="button" name="Boton" id="Boton" value="Ocultar"></td>
+    </tr>   
+
+    <tr>
+        <td><label for="pregunta">¿ Mayor De Edad ?</label></td>
+        
+        <td>
+        <input type="radio" name="pregunta" id="pregunta" value="Sí" checked ><span>Sí</span>
+        <input type="radio" name="pregunta" id="pregunta" value="No"><span>No</span>
+        </td>
+
+    </tr>   
+
+    <tr>
+        <td><label for="aficiones">Aficiones</label></td>
+
+        <td><input type="checkbox" name="deportes" id="deportes" value="D" checked><span>Deportes</span>
+       <input type="checkbox" name="cine" id="cine" value="C"><span>Cine</span>
+       <input type="checkbox" name="viajar" id="viajar" value="V"><span>Viajar</span>
+        </td>
+    </tr>   
+
+    <tr>
+        <td><label for="provincias">Provincias</label></td>
+        <td>
+            <select name="provincias" id="provincias">
+                <option value="-1">Seleccione Provincias</option>
+                <optgroup label="No Playero">
+                <option value="41" selected>Sevilla</option>
+                </optgroup>
+             
+                <optgroup label="Playero">
+                <option value="39">Cadiz</option>
+                <option value="27">Malaga</option>
+                </optgroup> 
+            </select>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td><label for="fichero">FOTO</label></td>
+        <td>
+            <input type="file" name="fichero" id="fichero">
+        </td>
+
+    </tr>
+
+    <tr>
+        <td><label for="descripcion">descripcion</label></td>
+        <td>
+            <textarea name="descripcion" id="descripcion" rows="10" cols="50" maxlength="15">
+            Probando Ando
+            </textarea>
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="edad">edad</label></td>
+        <td>    
+        <input type="number" name="edad" id="name" maxlength="5" step="0.5" max="10" min="0">
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="email">Email</label></td>
+        <td>
+            <input type="email" name="email" id="email" required> 
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="url">URL</label></td>
+        <td>
+            <input type="url" name="url" id="url" required value="http://"> 
+        </td>
+    </tr>
+
+    <tr>
+        <td><label for="buscar">buscar</label></td>
+        <td>
+            <input type="search" name="search" id="search" required> 
+        </td>
+    </tr>
+    <tr>
+        <td><label for="telefono">telefono</label></td>
+        <td>
+            <input type="tel" name="tel" id="tel" required> 
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>FORMULARIOS FECHAS</td>
+    </tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for=html>HTML</label>
+<br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for=css>CSS</label>
+
+
+
+
+<input type="checkbox" id="coche" name="coche" value="coche">
+<label for="coche">Uso Coche</label><br>
+<input type="checkbox" id="moto" name="moto" value="moto">
+<label for="moto">Uso Moto</label><br>
+<input type="checkbox" id="camion" name="camion" value="camion">
+<label for="camion">Uso Camion</label><br>
+<br><br><br><br><br>
+
+
+ <input type="submit" value="Submit">
+<br><br><br><br><br>
+
+
+<b>Dale Click Mi Pana</b><input type="button" onclick="alert('QUE PASA GENTE')">
+<br><br><br><br><br>
+
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<br><br><br><br><br>
+
+
+
+
+<label for="coche"><b>Uso Coche</b></label><br>
+<select id="coche" name="coche" size="3" multiple>
+<option value="volvo">Volvo</option>
+<option value="fiat">Fiat</option>
+<option value="mercedes" selected>Mercedes</option>
+</select>
+<br><br><br><br><br>
+
+
+<label for="texto"><b>Texto Largo</b></label><br>
+<textarea name="texto" rows="25" cols="25">
+xD
+</textarea>
+<br><br><br><br><br>
+
+
+<fieldset>
+<legend>Ankara Messi</legend>
+<label>Primer Nombre :</label> <input type="text"><br><br>
+<label>Apellido :</label> <input type="text"><br><br>
+</fieldset><br><br><br><br>
+
+
+BooF
+<input list="navegadores">
+<datalist id="navegadores">
+<option value="Internet Explorer">
+<option value="Firefox">
+<option value="Chrome">
+<option value="Opera">
+<option value="Safari">
+</datalist>
+
+<br><br><br><br>
+
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+0
+<input type="range"  id="a" name="a" value="50">
+100 +
+<input type="number" id="b" name="b" value="50">
+=
+<output name="x" for="a b"></output>
+<br><br>
+<input type="submit">
+  
+<br><br><br><br>
+
+
+
+</form>
+
+</body>
+</html>
+
+
+</body>
+
+</html>
