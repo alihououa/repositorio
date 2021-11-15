@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta name="Copyright" content="Alí">
+    <meta name="author" content="Alí">
+    <meta name="summary" content="clothes">
+    <meta name="language" content="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+
+</head>
+
+<body style="background-color: aquamarine; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+
+    <h1>Clothing Store</h1>
+    <form action="clothingstore.php" method="post">
+
+        <table>
+            <tr>
+                <td><label for="Name">Name</label> </td>
+               <td><input type="text" name="Name" id="Name"  placeholder="Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="Surname">Surname</label></td>
+                <td><input type="text" name="Surname" id="Surname" placeholder="Surname" required></td>
+            </tr>
+            <tr>
+                <td><label for="Age">Age</label></td>
+                <td><input type="number" name="Age" id="Age" min="0" max="99" required></td>
+            </tr>
+            <tr>
+                <td><label for="Adress">Adress</label></td>
+                <td><input type="text" name="Adress" id="Adress" placeholder="Adress" required></td>                
+                
+            </tr>
+            <tr>
+                <td><label for="town">Town</label></td>
+                <td>
+                    <select name="town" id="town" required >
+                        <option value="1">Jerez</option>
+                        <option value="2">Rota</option>
+                        <option value="3">Puerto Sta María</option>
+                        <option value="4">Chiclana</option>
+                        <option value="5">Cadiz</option>
+                        <option value="6">Sanlcuar</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone</label></td>
+                <td>
+                    <select name="phone" id="phone" required >
+                        <option value="34">34</option>
+                        <option value="372">372</option>
+                        <option value="33">33</option>
+                        <option value="358">358</option>
+                        <option value="777">777</option>
+                    </select>
+                    <input type="tel" name="tel" id="tel" placeholder="632******" required>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="work">have you worked before ? </label>
+
+                </td>
+                <td><input type="radio" name="work" id="work" value="Yes"><span>Yes</span>
+                    <input type="radio" name="work" id="work" value="No"><span>No</span></td>
+                
+            </tr>
+            <tr>
+                <td><label for="date">Date of your last work</label></td>
+                <td><input type="date" name="date" id="date" required></td>
+            </tr>
+            <tr>
+                <td><label for="socialnetworks">Select Your Social Networks</label>
+                </td>
+                <td><input type="checkbox" name="WhatsApp" id="WhatsApp" value="W" checked><span>WhatsApp</span>
+                    <input type="checkbox" name="InstaGram" id="InstaGram" value="I"><span>InstaGram</span>
+                    <input type="checkbox" name="FaceBook" id="FaceBook" value="F"><span><span></span>FaceBook</span></td>
+            </tr>
+            
+            <tr>
+                <td><label for="description">Own description for the position</label></td>
+                <td><textarea name="description" id="description" rows="25" cols="25"
+                        placeholder="Put here why whe should pick you" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td>
+                    <input type="email" name="email" id="email" required>
+                </td>
+            </tr>          
+            <tr>
+                <td> <input type="submit" value="Send Request"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
